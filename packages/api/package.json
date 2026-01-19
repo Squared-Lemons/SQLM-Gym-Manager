@@ -1,0 +1,19 @@
+{
+  "name": "@app/api",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts"
+  },
+  "dependencies": {
+    "@app/auth": "workspace:*",
+    "@app/database": "workspace:*",
+    "drizzle-orm": "^0.38.3",
+    "nanoid": "^5.0.9",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@app/typescript-config": "workspace:*",
+    "@types/node": "^22.10.5"
+  }
+}

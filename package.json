@@ -1,0 +1,23 @@
+{
+  "name": "gym-management",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:owner": "pnpm --filter @app/owner dev",
+    "dev:member": "pnpm --filter @app/member dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "db:generate": "turbo db:generate",
+    "db:migrate": "turbo db:migrate",
+    "db:push": "turbo db:push",
+    "db:studio": "pnpm --filter @app/database db:studio",
+    "db:seed": "pnpm --filter @app/database db:seed",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

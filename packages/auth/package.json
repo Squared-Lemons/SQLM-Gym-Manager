@@ -1,0 +1,15 @@
+{
+  "name": "@app/auth",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts"
+  },
+  "dependencies": {
+    "better-auth": "^1.1.10",
+    "@app/database": "workspace:*"
+  },
+  "devDependencies": {
+    "@app/typescript-config": "workspace:*"
+  }
+}

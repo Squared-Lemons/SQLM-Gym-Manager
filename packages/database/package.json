@@ -1,0 +1,30 @@
+{
+  "name": "@app/database",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx src/seed.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "drizzle-orm": "^0.38.3",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "drizzle-kit": "^0.30.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "@app/typescript-config": "workspace:*"
+  }
+}
