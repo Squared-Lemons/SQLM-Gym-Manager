@@ -1,6 +1,6 @@
 # SQLM - Gym Manager
 
-> This project is an example application spawned by a coding agent from the [Squared Agent Master Project](https://github.com/Squared-Lemons). It demonstrates autonomous code generation and full-stack application development using AI-driven workflows.
+> This project is an example application spawned by a coding agent from the [Squared Agent Master Project](https://github.com/Squared-Lemons/Squared-Agent). It demonstrates autonomous code generation and full-stack application development using AI-driven workflows.
 
 ## Overview
 
@@ -117,4 +117,4 @@ MIT
 
 ---
 
-Built with [Squared Agent Master Project](https://github.com/Squared-Lemons)
+Built with [Squared Agent Master Project](https://github.com/Squared-Lemons/Squared-Agent)
